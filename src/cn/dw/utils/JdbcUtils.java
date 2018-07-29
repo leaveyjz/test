@@ -18,7 +18,7 @@ public class JdbcUtils {
 	
 	public Connection getConnection() {
 		try {
-			return DriverManager.getConnection("jdbc:mysql://localhost:3306/studyJava", "root", "123456");
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?characterEncoding=UTF-8", "root", "123456");
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
