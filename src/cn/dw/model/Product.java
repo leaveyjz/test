@@ -3,6 +3,7 @@ package cn.dw.model;
 import java.util.Date;
 
 public class Product {
+	
 	private Integer id;
 	private String name;
 	private Double price;
@@ -41,6 +42,10 @@ public class Product {
 		this.date = date;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", remark=" + remark + ", date=" + date
+				+ "]";
+	}
 	
 }
